@@ -21,8 +21,8 @@ var ditto = {
     searchbar: true,
 
     // github specifics
-    github_username: null,
-    github_repo: "https://github.com/bifubao/api-doc/tree/gh-pages",
+    github_username: "bifubao",
+    github_repo: "api-doc",
 
     // initialize function
     run: initialize
