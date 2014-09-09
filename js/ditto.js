@@ -16,13 +16,13 @@ var ditto = {
 
     // display elements
     sidebar: true,
-    edit_button: true,
+    edit_button: false,
     back_to_top_button: true,
     searchbar: true,
 
     // github specifics
     github_username: null,
-    github_repo: null,
+    github_repo: "https://github.com/bifubao/api-doc/tree/gh-pages",
 
     // initialize function
     run: initialize
