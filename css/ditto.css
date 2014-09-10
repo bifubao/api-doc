@@ -58,7 +58,7 @@ body {
 }
 
 #sidebar ul li:before {  /* a hack to have dashes as a list style */
-    content: "-";
+    content: "";
     position: relative;
     left: -5px;
 }
