@@ -1,0 +1,60 @@
+/* reset */
+html{background-color:#fafcfa}
+body{background-color:#fff;color:#333;font-family:"Helvetica Neue", "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Arial, sans-serif;font-weight:200}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family:"Helvetica Neue", "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Arial, sans-serif;font-weight:200}
+a{color:#7a997c;/*5ab75f*/}
+a:hover{color:#708c72;/*60c465*/}
+a:active,a:focus{color:#708c72;/*54ab58*/}
+
+.list{padding-left:20px}
+.list > li{margin-bottom:.4em}
+
+/* image */
+figcaption{margin-top:20px;color:#999}
+
+/* text */
+.text-logo, .text-logo:hover, .text-logo:active{font-family:"Calibri", "Helvetica", Arial, sans-serif;color:#5ab75f}
+.text-success, .text-success:hover, .text-primary{color:#5ab75f}
+.text-highlight{background-color:yellow}
+.text-primary:hover{color:#60c465}
+.text-primary:active{color:#54ab58}
+.text-danger,.text-danger:hover{color:#e56140}
+.text-warning,.text-warning:hover{color:#ab8254}
+code.address{border:none;background-color:transparent;color:#333}
+.link-devider{display:inline-block;margin:0 12px;color:#999}
+.text-editable{position:relative;cursor:pointer}
+.text-editable:hover:after{position:absolute;right:-16px;top:.1em;opacity:.5;font-size:12px;font-family:"dcn-f";content:"\e605"}
+
+/* label */
+small.label{position:relative;top:-1px;}
+.label-danger{background-color:#e56140}
+
+/* dl dt dd */
+dt{margin-bottom:12px}
+dd + dt{margin-top:20px}
+dl label{font-weight:normal}
+.dl-inline dt, .dl-inline dd{display:inline-block}
+.dl-inline dt{margin-right:4px}
+.dl-inline dd{margin-right:20px}
+
+
+/* localized */
+.zh-CN .btn-lg{letter-spacing:.1em}
+.en .intro-n-register h1{font-size:52px}
+.en .menu-header{letter-spacing:1px;text-transform:uppercase}
+.en .form-horizontal .control-label:not([class*="col-"]){float:none;display:block;width:auto;padding:0;margin-bottom:8px;text-align:left}
+.en .form-horizontal .control-input:not([class*="col-"]){float:none;margin-left:0;padding-left:0}
+
+/* overwrite ditto */
+body {
+  min-width: 1024px;
+}
+#back_to_top {
+  right: 20px;
+}
+#sidebar *::selection {
+  background: darkgreen;
+}
+#sidebar *::-moz-selection {
+  background: darkgreen;
+}

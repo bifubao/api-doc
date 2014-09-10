@@ -20,20 +20,14 @@ body {
     padding-left: 25px;
     padding-top: 0;
 
-    box-shadow: 0 0 40px #CCC;
-    -webkit-box-shadow: 0 0 40px #CCC;
-    -moz-box-shadow: 0 0 40px #CCC;
-    border-right: 1px solid #BBB;
+    background: #5ab75f;
+    color: #FFF;
 }
 
 #sidebar h1 {
     font-size: 25px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-}
-
-#sidebar h1 a:link, #sidebar h1 a:visited {
-    color: #333;
 }
 
 #sidebar h2 {
@@ -46,7 +40,7 @@ body {
 }
 
 #sidebar a:visited, #sidebar a:link {
-    color: #4682BE;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -70,11 +64,10 @@ body {
     padding: 0;
 
     text-indent: -5px;  /* to compensate for the padding for the dash */
-    font-size: 12px;
+    font-size: 13px;
 }
 
 #content {
-    width: 580px;
 
     margin-left: 400px;
     padding-top: 10px;
@@ -90,11 +83,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-
     color: #FFF;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -106,26 +94,17 @@ body {
     border-radius: 5px;
 }
 
-#content pre code {
-    padding-left: 0;
-}
-
 #content code {
-    padding-left: 5px;
-    padding-right: 5px;
-
-    color: #222;
-    font-size: 10px;
-    font-weight: normal;
-    font-family: Consolas, monospace;
-
-    background: #F8F8F8;
+    padding: 15px;
     border-radius: 2px;
 }
 
+#content h1 {
+    margin: 50px 0 20px;
+}
+
 #content h2 {
-    margin-top: 50px;
-    margin-bottom: 0px;
+    margin: 30px 0;
 
     padding-top: 20px;
     padding-bottom: 0px;
@@ -133,18 +112,14 @@ body {
     font-size: 18px;
     text-align: left;
 
-    border-top: 2px solid #666;
+    border-top: 1px dotted #777;
+    font-weight: bold;
 }
 
 #content h3 {
-    margin-top: 50px;
     margin-bottom: 0px;
-
-    padding-top: 20px;
-    padding-bottom: 0px;
-
     text-align: left;
-    border-top: 1px dotted #777;
+    font-size: 13px;
 }
 
 #content hr {
@@ -202,6 +177,7 @@ body {
     height: 20px;
     width: 70px;
     top: 20px;
+    right: 30px;
 
     margin-left: 890px;
     margin-top: 0px;
@@ -324,12 +300,10 @@ input[type=search] {
 table{
     border-spacing: 0px;
     border-color: gray;
-    border-style: solid;
-    border-width: 0.5px
 }
 td, th{
-    padding: 3px 6px;
-    border-width: 1px;
+    padding: 5px 10px;
+    border-width: 0;
     border-color: #e2e2e2;
     border-top-style: solid;
     border-left-style: solid;
