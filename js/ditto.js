@@ -390,21 +390,33 @@ function generate_nav(){
     $parent[1] = $list;
     last_depth = 1;
     $el = 0;
-    $(ditto.content_id+' h1, h2').each(function() {
+    $(ditto.content_id+' h1,'+ditto.content_id+' h2').each(function(e1,e2,e3) {
         var depth;
         depth = +this.nodeName[1];
         if (depth > last_depth) {
             $parent[depth] = $('<ul>').appendTo($el);
         }
-        $el = $('<li><a href="#">'+$(this).text()+'</a></li>');
+        if (e1 == 0) {
+            $el = $('<li></li>');
+        } else {
+            $el = $('<li><a href="#">'+$(this).text()+'</a></li>');
+        }
+        
         nav_li_create_linkage($el.find('a'), $(this));
         $parent[depth].append($el);
 
 
         return last_depth = depth;
+
     });
+    move_sub_nav($list);
+}
 
-
+function move_sub_nav(sub_nav){
+    //console.log(window.location.hash);
+    //$(ditto.sidebar_id+' li a').show();
+    $(ditto.sidebar_id+' li a[href="'+ window.location.hash +'"]').parent().after(sub_nav);
+    //$(ditto.sidebar_id+' li a[href="'+ window.location.hash +'"]').parent().hide();
 }
 
 function nav_li_create_linkage(li_tag, target) {
