@@ -10,7 +10,7 @@
 
 完整的API接口文档请参考 [API 说明](#docs/readme) | [API文档v00002](#docs/api_doc_v00002)
 
-文档目前还在不断完善中，文档完全开源，如果发现问题欢迎提交pull-request。
+文档目前还在不断完善中，文档完全开源，如果发现问题欢迎访问 [Github](https://github.com/bifubao/api-doc) 提交 pull-request 。
 
 相关声明与协议
 -------------
