@@ -8,7 +8,7 @@
 
 如果您希望将币付宝作为第三方支付接口接入或者做一些低权限的查询工作，请查阅 [商家API说明](#docs/merchant_api)。
 
-完整的Api接口文档请参考 [API 说明](#docs/readme) | [API文档v00002](#docs/api_doc_v00002)
+完整的API接口文档请参考 [API 说明](#docs/readme) | [API文档v00002](#docs/api_doc_v00002)
 
 文档目前还在不断完善中，文档完全开源，如果发现问题欢迎提交pull-request。
 
