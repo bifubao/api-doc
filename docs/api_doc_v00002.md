@@ -953,7 +953,7 @@ user_id_or_btc_address | string     | 否         | 限制交易为某个用户�
                     },
                     "related_user": {
                         "user_id": "15",
-                        "user_email": "7thpark.com@163.com",
+                        "user_email": "test@example.com",
                         "mobile_phone_num": "",
                         "contact": {
                             "user_contact_id": "82",
