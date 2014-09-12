@@ -1017,7 +1017,9 @@ btc_transfer_request_id | int        | 是         | 转账ID
 =======
 
 ## 价格 /exchange/
-当价格有效时（两分钟之类有更新），返回价格信息，目前支持火币网。
+<del>当价格有效时（两分钟之内有更新），返回价格信息，目前支持火币网。</del>
+
+币付宝会实时（5~10秒）获取五家有良好信誉的中文交易所（<a target="_blank" href="https://www.huobi.com">huobi.com</a> / <a target="_blank" href="https://btcchina.com">btcchina.com</a> / <a target="_blank" href="https://www.okcoin.com">okcoin.com</a> / <a target="_blank" href="https://btctrade.com">btctrade.com</a> / <a target="_blank" href="https://peatio.com">peatio.com</a>）的最新交易价格，并去掉其中最高的价格和最低的价格，平均计算得来。
 
 ### 请求路径： <code>/exchange/</code>
 ### 返回格式：
@@ -1026,7 +1028,8 @@ btc_transfer_request_id | int        | 是         | 转账ID
        "error_no":0,
        "error_msg":"",
        "result":{
-          "huobi_price":"331500",
+          "price":"331500",
+          "huobi_price":"331500", // deprecated
           "huobi_last_modify_time":"2014-02-25 11:36:00"
        },
        "exec_time":"0.0039"
