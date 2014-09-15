@@ -1028,14 +1028,14 @@ btc_transfer_request_id | int        | 是         | 转账ID
        "error_no":0,
        "error_msg":"",
        "result":{
-          "price":"331500",
-          "huobi_price":"331500", // deprecated
-          "huobi_last_modify_time":"2014-02-25 11:36:00"
+          "price":"292130",
+          "time":"2014-09-15 06:26:25",
+          "updated_at":"2014-09-15 06:26:25",
+          "huobi_price":"292130", // deprecated
+          "huobi_last_modify_time":"2014-09-15 06:26:25" // deprecated
        },
-       "exec_time":"0.0039"
+       "exec_time":"0.0057"
     }
-
-
 
 
 联系人
