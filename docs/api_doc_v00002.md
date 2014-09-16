@@ -464,9 +464,9 @@ new_password | string     | 是        | 新密码
              "user_id":"17",
              "user_email":"test@example.com",
              "user_hash_id":"fe72624db6755c121a0aefc5f1c8deb2",
-             "mobile_phone_num":"1234567890",
-             "btc_cur_balance":"960263617301",
-             "latest_balance_id":"1418",
+             "mobile_phone_num":"18510165105",
+             "btc_cur_balance":"959913627301",
+             "latest_balance_id":"1438",
              "bitpass_btc_address":"",
              "two_step_google_id":"1869",
              "pay_pin_code_id":"31",
@@ -476,15 +476,21 @@ new_password | string     | 是        | 新密码
              "default_btc_address":"1JLSrYh4hwfdnj7cHNyxdZShRJ8wnc95TX",
              "timezone":"8",
              "creation_time":"2014-02-22 06:47:45",
-             "last_modify_time":"2014-09-04 09:20:52"
+             "last_modify_time":"2014-09-15 05:02:28",
+             "settings":{
+                "user_setting_id":"5",
+                "user_id":"17",
+                "is_ga_required_on_login":"0",
+                "show_badge_financial":"1",
+                "creation_time":"2014-07-04 08:29:03",
+                "last_modify_time":"2014-09-16 04:00:01"
+             }
           },
           "session":{
-             
           }
        },
-       "exec_time":"0.0062"
+       "exec_time":"0.0726"
     }
-
 
 
 
