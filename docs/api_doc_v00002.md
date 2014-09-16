@@ -152,69 +152,73 @@ is_need_rsa    | boolean    | 否         | 是否需要生成rsa公钥私钥(�
        "error_msg":"",
        "result":{
           "session":{
-             "session_id":"41",
-             "user_id":"6",
-             "token":"769642739d45a504636233c6ab6b3f20462fdda097c04ad257c2a42d3892016e",
-             "expire_time":"2014-02-16 13:05:51",
+             "session_id":"3281",
+             "user_id":"17",
+             "token":"beb23a88430544c33d85e596bc7818ba9720a153548a7eea86a3fa87a4505a69",
+             "expire_time":"2014-09-30 05:53:23",
              "counter":"1",
              "rsa_public_key":"-----BEGIN PUBLIC KEY-----
-    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2nu4DeUGv3Ge/BTIMKS+
-    ZSRTnyzntTvYsEd8vbUFU5x68igD7Nu6Y8193nTUtv3dg6fEX2ejMPqquO+Kw+Im
-    LsGzeHtiDdMBIce0IDiXQPdtBuzyA81e8WO7I8avDI4ZgprYCG+2ikRQwDLPML1c
-    PKDS7FdLmg3DegvovttEPp9rdsW8JxfAdh0hbNu2fmXVxurExyMgktT+tzmLkegH
-    OWE0P6Eh70+A7zXSYpGogF1PJSnqIcue1ZIDRiFhdu3496i4SkVD9uc5z3+az2wQ
-    L94OB4dZscPAyAqpHjwpFOC6se4RWbAj83eX2WdoGEBO7PrzvJHI27Tw3Q1aTHrZ
-    JwIDAQAB
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA70KpczmyOjxNlKHHRLEL
+    r8aeiAFyORhPq1Mlnbmao5YOUxeneGV7j5JryTQ+J68qTZ8TNRGznN54vkQ1B5BX
+    33X4/a2D3Fqokb+V/IcWAoPm3JIVikP4tr+JBbZjzfDmlNM50zhLq0AqQViErMWw
+    bPkZBC+baulSippveBcljT13KbqoUd+YXDSfe0p97vBCl6UU5xEw0zEUUebmWBv+
+    BWq2m7pMgjU0ZBwT0JA/cwwq1Djt92zFqn5WC/sisyLOd7NBmjQqAc8u9ZoZbZf6
+    6DBcuxhcQhHr9dRBHsI82AumSXEwTwWlDicRzEtgY+xgv4DrGAu17+4YMa390LOH
+    3wIDAQAB
     -----END PUBLIC KEY-----
     ",
-             "creation_time":"2014-02-13 13:05:51",
-             "last_modify_time":"2014-02-13 13:05:51",
+             "creation_time":"2014-09-16 05:53:23",
+             "last_modify_time":"2014-09-16 05:53:23",
              "rsa_private_key":"-----BEGIN PRIVATE KEY-----
-    MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDae7gN5Qa/cZ78
-    FMgwpL5lJFOfLOe1O9iwR3y9tQVTnHryKAPs27pjzX3edNS2/d2Dp8RfZ6Mw+qq4
-    74rD4iYuwbN4e2IN0wEhx7QgOJdA920G7PIDzV7xY7sjxq8MjhmCmtgIb7aKRFDA
-    Ms8wvVw8oNLsV0uaDcN6C+i+20Q+n2t2xbwnF8B2HSFs27Z+ZdXG6sTHIyCS1P63
-    OYuR6Ac5YTQ/oSHvT4DvNdJikaiAXU8lKeohy57VkgNGIWF27fj3qLhKRUP25znP
-    f5rPbBAv3g4Hh1mxw8DICqkePCkU4Lqx7hFZsCPzd5fZZ2gYQE7s+vO8kcjbtPDd
-    DVpMetknAgMBAAECggEBAMQKYRMunshnNiWwrBRhrmlomBPqohpPkdZSvs4mQJpO
-    fU8Nsr/0RSHKQBe8syVjU0EP5zdH8fk/4rJAVj3/jQ1FRzljVI9c9tYNsEV9IdLs
-    cIrXTy00OO3V9BRc8bMNSjyTniarvpoARIjAzoJIVxwbnkbs6WxYzz6SswuWCX05
-    uzGiWBPrDY5GL9kwIL+kjGP1NzeuPWK0xHbIPAECa+L3BYCWTN4pMExV54fXbVa7
-    dMiEZhNZoDXkq1U5oRopXDlcaUFOUm3MB670xUNwpavqD8jp93Dx8icq8vTTRRoj
-    KvWiFe7sUnB4dk9dr6MCjgWeArw8eSuYLqsMlN3CfWkCgYEA/V3X2ZEFuDnuQQ1K
-    o//sOmaWclNvRVbfc/RtUeGGPiwv70SqpljKllxNxlWGQpFCkG8cnqEnspYRFlFH
-    vLCPDY1c6QiUG0UNHhix/xNYTDDA0Knoe3UAsqsadOOWUTKcXslCFOoUuB0jWvOU
-    6mYPHoo4wxAMDA4mTgNvqDlprJUCgYEA3MEO9pj3AR7JMbket9lhflQRUY49HRDu
-    BMd4YV5w4z1fInE/x0uh3CCIpdtOtHJEoYAI1aG38idAYsojsE/uUoNSJle57YTS
-    tJdq8C9Ps8yvmNWhjFnPb4lhXXGFZd8j3612H6ryYfKACcFNQ8e24YK5p+72cK8Y
-    WF4Cd8J0Q8sCgYEAjg13X7w3gLq6Ii7ZkmmCgJvT7fVphW7XiaOZRzcylNkhZv0Q
-    0IMn0nWeBX0d8WSP9XrWiPnB0BbjLagUmG5FRkvjs6PjpgZo/F7MLT8jWlRbRqJ8
-    fftzkLjt9GtFc/D0SxB7xE4Zn8B2eh/ndiQShgTpHjR5DKlCQKschyzpWqECgYEA
-    2MofT7zYlZkOLG6H5DTusYkNmPH+wlSl6ruZVMXSRtc2XjSpVabIxcyNZZQBruOo
-    0pFSG7o9UumJKXspoTRd71pXiqAMT11pL0CkHEvaEdCpgYYKqDJqrDZWD9Y0Et8X
-    88n9fwv6DIaBhxL2NeIjj0M539mk2vSZC+8GrWWhmBECgYAxTjYwvk0NfqJcQZoC
-    aIsxvCEfQrVBFO8zC91RwS5DqKyXFTaUFLlgA9PzzZL8d5epl2pzi5OOawUpqKkL
-    KSeKAewCXgoCjclowMRN6a/ioABfE7ogQIWnqRPSm3yqrMRC2RjTv4kDsfJ30UZL
-    WC6CYYfNdDc8eF0AVwBdxKHL+g==
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDvQqlzObI6PE2U
+    ocdEsQuvxp6IAXI5GE+rUyWduZqjlg5TF6d4ZXuPkmvJND4nrypNnxM1EbOc3ni+
+    RDUHkFffdfj9rYPcWqiRv5X8hxYCg+bckhWKQ/i2v4kFtmPN8OaU0znTOEurQCpB
+    WISsxbBs+RkEL5tq6VKKmm94FyWNPXcpuqhR35hcNJ97Sn3u8EKXpRTnETDTMRRR
+    5uZYG/4FarabukyCNTRkHBPQkD9zDCrUOO33bMWqflYL+yKzIs53s0GaNCoBzy71
+    mhltl/roMFy7GFxCEev11EEewjzYC6ZJcTBPBaUOJxHMS2Bj7GC/gOsYC7Xv7hgx
+    rf3Qs4ffAgMBAAECggEBAJQxJeNIiSuoziSRT2ssfaCR1P9IZgcXF8F17oaSv0Uz
+    XAv7Sq83rCBxAHHO+fB6fik1rh/gpu8ynHa8qFvW+5Zc66u0HUgOnvonQC75PJiy
+    OfvEP7M0BoiqeaQgJBEadLcZXWeGJtgbFhEDUqnwiCX245fEJO9DNOzEWuZ277ta
+    dBrmkbpW5KVQIDtf+BH2gljQa7Qv3LchSGiFoR68Zh4wB+m337h1/QdgydWnzTYX
+    PbVgiotuqRJFoFQTs4mF1ofXCle5VnB11qW8CYRmZL99lkxB7D0r1VmHmRnaZpV1
+    wx19uKNetK3J7/YXNNbNeW8kFS0GMDjrSe/grS2DOwECgYEA/ThzL96pe0qKcEne
+    7U+P1kwnYvghm1SSUmj0U/LsCHET0tj7BRiwrRHsett3gOogRlG0zavf0KUv4X5d
+    os+vlXvsuSbHPCuLWsXZIJpn4GPAbsHEi5zAoAQU+giB71YwFtCjhy2MEZTpGlcv
+    VSkwSUXOcxspf1cqyiKvkx5F0okCgYEA8eL76alYBkm9Hqw441qRPBDYyQMLU9x5
+    1By5mYg3stA9OI/Ka4jdFwdTtuLSfsZyRraYTtakinUegh1H4fy38IwWVhs1vqbc
+    wib1Pw2dBmZaMrrqUGYzNemxo4IZJfPnt085fbvqpD8HFm+DtPeEMB4wxsn0fqZQ
+    DTTEUCuDjScCgYAiIPadcBRFssE/6yTptTx8tJzmYO0eo2JpSw4LNoWLiboTQ/1p
+    LW+6k9zcnjHYJTYeZCrLQawT0f/HE6IJLJbMvfwk5E4cFP5eSKZAF6+Cdc9c3i7g
+    ZkssBgDRxk3E9Ufb+1jfAkuLnxdf3npZrwh8B7WQnAuWxyfUQKKLYJwmiQKBgQCj
+    Mbk0VISG+YkXAKsA+UGzfMpGFD+4PLAVY6v04epyQfyMBLdVBenkd5ULdsz9q3W+
+    L8NirX4lzA7hSlANMCwJpvoK7iC8mGeothAQkma2wqdoQqODyvASF7E517SP3pcf
+    Hdxz8CzG0588i9AYcEZHEJdoByllqV+pCUjJrhH7UQKBgD+y/u6H4/UHkO+kouSh
+    pwbSlxiscA0qFafwokQp7P7bYa4gklGW2w7yPI/Xcft8C8P0zvXifFqpFV6marUR
+    yTwEIs/MiM1DQjD75s94RWoFb+VMz+bYvBAhm9/xlere0WJqcscnN8TnDOSFatv0
+    Evrm/SlrGikZBV9msDSYkvae
     -----END PRIVATE KEY-----
     "
           },
           "user_info":{
-             "user_id":"6",
-             "user_email":"bit.kevin@gmail.com",
-             "user_hash_id":"064488ad9f7e0b6f099f346069c40598",
-             "mobile_phone_num":"18611818631",
+             "user_id":"17",
+             "user_email":"test@example.com",
+             "user_hash_id":"fe72624db6755c121a0aefc5f1c8deb2",
+             "mobile_phone_num":"18510165105",
+             "btc_cur_balance":"959913627301",
+             "latest_balance_id":"1438",
              "bitpass_btc_address":"",
-             "two_step_google_id":"0",
+             "two_step_google_id":"1869",
+             "pay_pin_code_id":"31",
+             "user_verify_id":"1",
              "is_email_verified":"1",
-             "last_email_send_time":"2014-02-12 15:39:31",
-             "default_btc_address":"1Cdj9LLSCpU3F8TYgrQiBqWNhTKeyiSXat",
+             "last_email_send_time":"2014-07-04 08:51:32",
+             "default_btc_address":"1JLSrYh4hwfdnj7cHNyxdZShRJ8wnc95TX",
              "timezone":"8",
-             "creation_time":"2014-02-12 13:46:29",
-             "last_modify_time":"2014-02-12 15:26:23"
+             "creation_time":"2014-02-22 06:47:45",
+             "last_modify_time":"2014-09-15 05:02:28"
           }
        },
-       "exec_time":"0.2810"
+       "exec_time":"0.7862"
     }
 
 ## 用户登出 /user/logout/
