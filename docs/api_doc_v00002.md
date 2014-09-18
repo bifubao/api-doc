@@ -1552,7 +1552,7 @@ external_redirect_url | string，小于128个字符 | 否                       
 
 
 ## 订单详情  /order/detail/
-创建内部商品的订单
+订单详情 
 ### 请求路径： <code>/order/detail/</code>
 ### 参数表
 
@@ -1614,7 +1614,8 @@ order_hash_id | string    | 是   |     订单Hash ID
 
 
 ## 订单更新  /order/update/
-订单更新
+更新订单的留言等信息
+
 ### 请求路径： <code>/order/update/</code>
 ### 参数表
 
@@ -1634,15 +1635,6 @@ onchain_notify_email  | string     | 是         | onchain通知邮箱
        "exec_time":"0.2471"
     }
 
-
-### 失败返回
-
-    {
-       "error_no":0,
-       "error_msg":"",
-       "result":0,
-       "exec_time":"0.2471"
-    }
 
 
 ## 订单详情（通过外部ID） /order/query/
