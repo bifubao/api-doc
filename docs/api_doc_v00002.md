@@ -1798,23 +1798,34 @@ product_id | int        | 是         | 无         | 商品ID
 ### 成功返回
 
     {
-       "error_no":0,
-       "error_msg":"",
-       "result":{
-          "0":{
-             "product_id":"6",
-             "product_hash_id":"348101df8114dae2fcf8e71093ef4ef31e7e780dcaa709b9e060fb5c48b4226d",
-             "user_id":"13",
-             "product_name":"参数值需要urlencode()",
-             "product_desc":"",
-             "price_btc":"0",
-             "price_cny":"100000",
-             "creation_time":"2014-02-28 06:51:44",
-             "last_modify_time":"2014-02-28 06:51:44"
-          }
-       },
-       "exec_time":"0.2112"
-    }
+    "error_no": 0, 
+    "error_msg": "", 
+    "result": {
+        "product_id": "128", 
+        "product_hash_id": "8d7c95cb90aa745a171be1acee81967abd4177420f0ca48a6b14e8c0928fe406", 
+        "is_archive": "0", 
+        "user_id": "34", 
+        "external_order_id": "", 
+        "callback_url": "http://bifubao.com", 
+        "redirect_url": "http://www.bifubao.com", 
+        "product_name": "jiaoqian", 
+        "product_desc": "shouqian", 
+        "price_btc": "120000", 
+        "price_cny": "0", 
+        "seller_hint": "", 
+        "quantity_discount": [
+            {
+                "quantity": "10000", 
+                "discount": "90"
+            }
+        ], 
+        "is_quantity_changeable": "1", 
+        "is_leave_message_required": "1", 
+        "creation_time": "2014-06-17 10:04:51", 
+        "last_modify_time": "2014-06-17 10:04:51"
+    }, 
+    "exec_time": "0.1697"
+}
 
 
 
