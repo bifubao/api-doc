@@ -1485,13 +1485,13 @@ product_hash_id | string     | 是         | 商品Hash ID
 --------------------- | --------------------------- | ------------------------------------------------ | ----------------------------------------------------------------
 external_order_id     | string, 小于64个字符  |  是                                          |     外部订单ID，每个商户(user_id)下的订单ID必须唯一
 external_info         | string , 小于64个字符 |  否                                          |     其他补充信息
-price_btc             | number               |        是(price_btc/price_cny必须有一个大于零) | 比特币定价，单位btc。范围：[0.0001, 20000000]
-price_cny             | number               |        是(price_btc/price_cny必须有一个大于零) | 人民币定价，单位元。范围：[1, 1000000000]
+price_btc             | number               |        否(当is_deposit_order不为1时，price_btc/price_cny必须有一个大于零) | 比特币定价，单位btc。范围：[0.0001, 20000000]
+price_cny             | number               |        否(当is_deposit_order不为1时，price_btc/price_cny必须有一个大于零) | 人民币定价，单位元。范围：[1, 1000000000]
 display_name          | string，小于100个字符 | 是                                           |    显示名称，通常是商品名称等信息
 display_desc          | string，小于200个字符 | 否                                           |    显示描述信息，通常是简介，备注等信息
 external_callback_url | string，小于128个字符 | 否                                           |    回调通知URL
 external_redirect_url | string，小于128个字符 | 否                                           |    重定向至目标URL
-
+is_deposit_order     | int                  | 否                                           | int 0 或 1，默认为0，表示是否为直接充值订单，为1时 price_btc 和 price_cny 无效可不填写 
 
 ### 错误码
 
