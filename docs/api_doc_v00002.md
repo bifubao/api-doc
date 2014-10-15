@@ -747,6 +747,7 @@ pin_code       | number     | 是（ga_code/pin_code必须有一个不为空，w
 pay_pin_code   | number     | 是（移动端不填写ga_code/pin_code，须填写pay_pin_code） | 移动端支付PIN码
 tx_fee         | number     | 否                                                 |  若交易为向外部发送比特币，则必须填写。目前允许区间：[0.0001, 0.01] BTC
 leave_message  | string     | 否                                                 |  50汉字或英文以内
+uniqkey        | string     | 是                                                 | /uniqkey/create/
 
 
 ### 错误码
