@@ -519,9 +519,9 @@ new_password | string     | 是        | 新密码
 
 
 
-## 判断用户是否实名验证 /user/verifyid/
+## 用户实名验证 /user/verifyid/
 
-判断用户是否实名验证, 是返回1, 否返回0
+用户自助实名验证
 
 ### 请求路径： <code>/user/verifyid/</code>
 ### 参数表
@@ -552,7 +552,253 @@ id_id_number | string | 身份证号码
     }
 
 
+银行卡
+====
 
+## 创建/关联银行卡 /bankcard/create/
+
+创建/关联银行卡
+
+### 请求路径：  <code>/bankcard/create/</code>
+
+### 参数表
+
+**名称** | **类型** | **必须** |**说明**
+---------- | ------------- | -- | ------------
+bankcard_number | string   | 是 | 银行卡号 
+bank_symbol     | string   | 是 | 银行 
+bank_location  | string   | 否 | 银行开户行
+
+### 错误码
+
+**Code** | **Mesasge**
+-------- | ----------------------------------------------------------------
+12201    | 总银行卡数量不得大于10
+12202    | 银行代号错误
+12303    | 用户还未进行实名验证
+
+
+### 成功后返回：
+
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "bankcard_id":"3",
+          "user_id":"5",
+          "bankcard_number":"88888888",
+          "owner_name":"测试",
+          "bank_symbol":"cbc",
+          "bank_location":"",
+          "creation_time":"2014-11-10 11:30:00",
+          "last_modify_time":"2014-11-10 11:30:00"
+       },
+       "exec_time":"0.1729"
+    }
+
+
+
+## 删除银行卡 /bankcard/delete/
+
+删除银行卡
+
+### 请求路径：  <code>/bankcard/delete/</code>
+### 参数表
+
+**名称** | **类型** | **说明**
+---------- | ---------- | ------------
+bankcard_id | int       | 银行卡id
+
+### 成功后返回：
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":1,
+       "exec_time":"0.1285"
+    }
+
+
+## 银行卡列表 /bankcard/list/
+
+银行卡列表
+
+### 请求路径：  <code>/bankcard/list/</code>
+### 参数表
+
+**名称** | **类型** | **说明**
+---------- | ---------- | ------------
+
+
+### 错误码
+### 成功后返回：
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "0":{
+             "bankcard_id":"3",
+             "user_id":"5",
+             "bankcard_number":"88888888",
+             "owner_name":"测试",
+             "bank_symbol":"cbc",
+             "bank_location":"",
+             "creation_time":"2014-11-10 11:30:00",
+             "last_modify_time":"2014-11-10 11:30:00",
+             "bank_id":"2",
+             "bank_name":"建设银行"
+          },
+          "1":{
+             "bankcard_id":"1",
+             "user_id":"5",
+             "bankcard_number":"123456789",
+             "owner_name":"测试",
+             "bank_symbol":"cmb",
+             "bank_location":"",
+             "creation_time":"2014-11-10 11:11:29",
+             "last_modify_time":"2014-11-10 11:11:29",
+             "bank_id":"6",
+             "bank_name":"招商银行"
+          }
+       },
+       "exec_time":"0.1311"
+    }
+
+
+## 查看银行卡 /bankcard/detail/
+
+查看银行卡
+
+### 请求路径：  <code>/bankcard/detail/</code>
+### 参数表
+
+**名称** | **类型** | **说明**
+---------- | ---------- | ------------
+bankcard_id | int       | 银行卡id
+
+### 成功后返回：
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "bankcard_id":"3",
+          "user_id":"5",
+          "bankcard_number":"88888888",
+          "owner_name":"测试",
+          "bank_symbol":"cbc",
+          "bank_location":"",
+          "creation_time":"2014-11-10 11:30:00",
+          "last_modify_time":"2014-11-10 11:30:00",
+          "bank_id":"2",
+          "bank_name":"建设银行"
+       },
+       "exec_time":"0.0487"
+    }
+
+
+## 银行列表 /bank/list/
+
+银行列表
+
+### 请求路径：  <code>/bank/list/</code>
+### 参数表
+
+**名称** | **类型** | **说明**
+---------- | ---------- | ------------
+
+
+### 成功后返回：
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "0":{
+             "bank_id":"1",
+             "bank_symbol":"icbc",
+             "bank_name":"工商银行"
+          },
+          "1":{
+             "bank_id":"2",
+             "bank_symbol":"cbc",
+             "bank_name":"建设银行"
+          },
+          "2":{
+             "bank_id":"3",
+             "bank_symbol":"bc",
+             "bank_name":"中国银行"
+          },
+          "3":{
+             "bank_id":"4",
+             "bank_symbol":"bcm",
+             "bank_name":"交通银行"
+          },
+          "4":{
+             "bank_id":"5",
+             "bank_symbol":"abc",
+             "bank_name":"农业银行"
+          },
+          "5":{
+             "bank_id":"6",
+             "bank_symbol":"cmb",
+             "bank_name":"招商银行"
+          },
+          "6":{
+             "bank_id":"7",
+             "bank_symbol":"cmbc",
+             "bank_name":"民生银行"
+          },
+          "7":{
+             "bank_id":"8",
+             "bank_symbol":"cncb",
+             "bank_name":"中信银行"
+          },
+          "8":{
+             "bank_id":"9",
+             "bank_symbol":"hxb",
+             "bank_name":"华夏银行"
+          },
+          "9":{
+             "bank_id":"10",
+             "bank_symbol":"cib",
+             "bank_name":"兴业银行"
+          },
+          "10":{
+             "bank_id":"11",
+             "bank_symbol":"spdb",
+             "bank_name":"浦东发展银行"
+          },
+          "11":{
+             "bank_id":"12",
+             "bank_symbol":"bob",
+             "bank_name":"北京银行"
+          },
+          "12":{
+             "bank_id":"13",
+             "bank_symbol":"ceb",
+             "bank_name":"光大银行"
+          },
+          "13":{
+             "bank_id":"14",
+             "bank_symbol":"sdb",
+             "bank_name":"深圳发展银行"
+          },
+          "14":{
+             "bank_id":"15",
+             "bank_symbol":"pab",
+             "bank_name":"平安银行"
+          },
+          "15":{
+             "bank_id":"16",
+             "bank_symbol":"gdb",
+             "bank_name":"广东发展银行"
+          },
+          "16":{
+             "bank_id":"17",
+             "bank_symbol":"psbc",
+             "bank_name":"中国邮政储蓄银行"
+          }
+       },
+       "exec_time":"0.0557"
+    }
 
 
 短信/语音
