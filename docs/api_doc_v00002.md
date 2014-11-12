@@ -2945,6 +2945,136 @@ pin_code     | number               | 是（ga_code/pin_code必须有一个不�
     }
 
 
+兑换
+=========
+
+购买 BTC /buybtc/order/
+---------------------------------------
+购买 BTC
+
+### 请求路径： ```/buybtc/order/```
+
+### 参数表
+
+| *名称* | *类型* | *必须* | *说明* |
+|-------|--------|-------|--------|
+| bankcard_number | string | 是 | 银行卡号 |
+| bank_symbol    | string  | 是 | 银行代号 |
+| original_amount | float | 是 | 法币数量  |
+
+### 返回：
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "exchange_order_id":"7",
+          "user_id":"5",
+          "ratio":"0",
+          "original_currency":"CNY",
+          "target_currency":"BTC",
+          "bankcard_number":"6214xxxxxxxxxxxxxxx",
+          "bankcard_owner_name":"测试",
+          "bank_symbol":"ccb",
+          "original_amount":"100000",
+          "original_value_received":"0",
+          "target_value_received":"0",
+          "handle_status":"100",
+          "external_exchange_id":"",
+          "external_transfer_id":"",
+          "memo":"",
+          "creation_time":"2014-11-12 05:28:48",
+          "last_modify_time":"2014-11-12 05:28:48"
+       },
+       "exec_time":"0.6151"
+    }
+
+
+购买 BTC 订单列表 /buybtc/orderlist/
+---------------------------------------
+购买 BTC 订单列表 
+
+### 请求路径： ```/buybtc/orderlist/```
+
+### 参数表
+
+| *名称* | *类型* | *必须* | *默认值* |*说明* |
+|-------|--------|-------|------| ------|
+| page_no | int  | 否 | 1 | 分页码 |
+| page_size | int  | 否 | 500 | 分页大小，范围：[2, 500] |
+
+### 返回：
+
+    {
+       "error_no":0,
+       "error_msg":"",
+       "result":{
+          "total_count":6,
+          "page_no":1,
+          "page_size":500,
+          "items":{
+             "0":{
+                "exchange_order_id":"7",
+                "user_id":"5",
+                "ratio":"0",
+                "original_currency":"CNY",
+                "target_currency":"BTC",
+                "bankcard_number":"6214xxxxxxxxxxxxxxx",
+                "bankcard_owner_name":"测试",
+                "bank_symbol":"ccb",
+                "original_amount":"100000",  // 单位为分
+                "original_value_received":"0",
+                "target_value_received":"0",
+                "handle_status":"100",
+                "external_exchange_id":"",
+                "external_transfer_id":"",
+                "memo":"",
+                "creation_time":"2014-11-12 05:28:48",
+                "last_modify_time":"2014-11-12 05:28:48"
+             },
+             "1":{
+                "exchange_order_id":"6",
+                "user_id":"5",
+                "ratio":"0",
+                "original_currency":"CNY",
+                "target_currency":"BTC",
+                "bankcard_number":"6214xxxxxxxxxxxxxxx",
+                "bankcard_owner_name":"测试",
+                "bank_symbol":"ccb",
+                "original_amount":"100000",
+                "original_value_received":"0",
+                "target_value_received":"0",
+                "handle_status":"100",
+                "external_exchange_id":"",
+                "external_transfer_id":"",
+                "memo":"",
+                "creation_time":"2014-11-12 03:36:56",
+                "last_modify_time":"2014-11-12 03:36:56"
+             },
+             "2":{
+                "exchange_order_id":"5",
+                "user_id":"5",
+                "ratio":"0",
+                "original_currency":"CNY",
+                "target_currency":"BTC",
+                "bankcard_number":"6214xxxxxxxxxxxxxxx",
+                "bankcard_owner_name":"测试",
+                "bank_symbol":"ccb",
+                "original_amount":"100000",
+                "original_value_received":"0",
+                "target_value_received":"0",
+                "handle_status":"100",
+                "external_exchange_id":"",
+                "external_transfer_id":"",
+                "memo":"",
+                "creation_time":"2014-11-12 03:36:39",
+                "last_modify_time":"2014-11-12 03:36:39"
+             }
+          }
+       },
+       "exec_time":"0.0925"
+    }
+
+
 币券
 =========
 
